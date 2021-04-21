@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="reminder"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="@string/pref_notification"
+        android:defaultValue="false"
+        android:summaryOff="@string/reminder_off"
+        android:summaryOn="@string/reminder_on"
+        />
+
+    <Preference
+        android:key="language"
+        android:icon="@drawable/ic_baseline_language_24"
+        android:title="@string/pref_language"
+        android:summary="@string/selected_language"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+       />
+
+</PreferenceScreen>

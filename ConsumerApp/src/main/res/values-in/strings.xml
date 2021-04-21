@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Other string resources-->
+    <string name="app_name">GitHub UserApp Consumer</string>
+    <string name="tv_users_username">username</string>
+    <string name="avatar">avatar</string>
+    <string name="tv_name_received">name diterima</string>
+    <string name="tv_follower_received">follower diterima</string>
+    <string name="tv_following_received">following diterima</string>
+    <string name="tv_company_received">company diterima</string>
+    <string name="tv_location_received">location diterima</string>
+    <string name="tv_repository_received">repository diterima</string>
+    <string name="detailTitle">Detail username diterima</string>
+    <string name="tab_followers">Pengikut</string>
+    <string name="tab_following">Mengikuti</string>
+    <string name="followers_label">Pengikut</string>
+    <string name="following_label">Mengikuti</string>
+    <string name="text_not_found1">User Tidak Ditemukan</string>
+    <string name="user_not_found">User Tidak Ditemukan</string>
+    <string name="no_followers">Tidak ada Pengikut</string>
+    <string name="no_following">Tidak ada Mengikuti</string>
+    <string name="img_user_not_found">User tidak ditemukan</string>
+    <string name="add_favorite">Tambah user ke favorit</string>
+    <string name="list_favorite_user">Daftar Favorit User</string>
+    <string name="github_user_consumer">Github User Consumer</string>
+</resources>

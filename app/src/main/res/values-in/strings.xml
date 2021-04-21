@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Other string resources-->
+    <string name="app_name">GitHub UserApp</string>
+    <string name="tv_users_type">type</string>
+    <string name="tv_users_username">username</string>
+    <string name="github_user">Github User</string>
+    <string name="avatar">avatar</string>
+    <string name="tv_name_received">name diterima</string>
+    <string name="tv_follower_received">follower diterima</string>
+    <string name="tv_following_received">following diterima</string>
+    <string name="tv_company_received">company diterima</string>
+    <string name="tv_location_received">location diterima</string>
+    <string name="tv_repository_received">repository diterima</string>
+    <string name="detailTitle">Detail username diterima</string>
+    <string name="splash_screen_text">Github User</string>
+    <string name="tv_main">Temukan User Github dan Lengkapnya Disini</string>
+    <string name="logoapp">Logo</string>
+    <string name="tab_followers">Pengikut</string>
+    <string name="tab_following">Mengikuti</string>
+    <string name="followers_label">Pengikut</string>
+    <string name="following_label">Mengikuti</string>
+    <string name="search_user">Cari User</string>
+    <string name="text_not_found1">User Tidak Ditemukan</string>
+    <string name="text_not_found2">Cari user di kolom pencarian</string>
+    <string name="user_not_found">User Tidak Ditemukan</string>
+    <string name="no_followers">Tidak ada Pengikut</string>
+    <string name="no_following">Tidak ada Mengikuti</string>
+    <string name="img_user_not_found">User tidak ditemukan</string>
+    <string name="fb_favorite">Favorit</string>
+    <string name="pref_language">Pilih Bahasa</string>
+    <string name="pref_notification">Pengingat Pukul 9.00 Pagi</string>
+    <string name="selected_language">Indonesia</string>
+    <string name="reminder_off">Notifikasi Mati</string>
+    <string name="reminder_on">Notifikasi Hidup</string>
+    <string name="notification">Ayo cari user di Github UserApp!</string>
+    <string name="settings">Pengaturan</string>
+    <string name="add_favorite">Tambah user ke favorit</string>
+    <string name="list_favorite_user">Daftar Favorit User</string>
+    <string name="username_widget_text">username widget text</string>
+    <string name="type_widget_text">type widget text</string>
+    <string name="favorite_users">Pengguna Github Favorit</string>
+    <string name="no_image">Tidak ada gambar</string>
+    <string name="cd_image">Gambar user</string>
+    <string name="remove_favorite">Hapus user dari favorit</string>
+    <string name="tv_userwidget_title1">Sayangnya..</string>
+    <string name="tv_userwidget_title2">Tidak ada favorit user disini</string>
+</resources>

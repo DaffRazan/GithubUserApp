@@ -1,0 +1,26 @@
+<resources>
+    <!-- Other string resources-->
+    <string name="app_name">GitHub UserApp Consumer</string>
+    <string name="tv_users_username">username</string>
+    <string name="avatar">avatar</string>
+    <string name="tv_name_received">name received</string>
+    <string name="tv_follower_received">follower received</string>
+    <string name="tv_following_received">following received</string>
+    <string name="tv_company_received">company received</string>
+    <string name="tv_location_received">location received</string>
+    <string name="tv_repository_received">repository received</string>
+    <string name="detailTitle">Detail username received</string>
+    <string name="tab_followers">Followers</string>
+    <string name="tab_following">Following</string>
+    <string name="followers_label">Followers</string>
+    <string name="following_label">Following</string>
+    <string name="text_not_found1">User not found</string>
+    <string name="user_not_found">User not found</string>
+    <string name="no_followers">No Followers</string>
+    <string name="no_following">No Following</string>
+    <string name="img_user_not_found">User not found</string>
+    <string name="add_favorite">Add user to favorite</string>
+    <string name="list_favorite_user">List Favorite User</string>
+    <string name="github_user_consumer">Github User Consumer</string>
+
+</resources>
