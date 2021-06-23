@@ -3,6 +3,7 @@ package com.daffa.githubuserapp.view
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +18,7 @@ import com.daffa.githubuserapp.databinding.ActivityDetailUserBinding
 import com.daffa.githubuserapp.viewModel.DetailActivityViewModel
 import com.google.android.material.tabs.TabLayoutMediator
 import de.hdodenhof.circleimageview.CircleImageView
+
 
 class DetailUserActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -39,6 +41,10 @@ class DetailUserActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Scroll to very top
+        binding.scroll.isFocusableInTouchMode = true
+        binding.scroll.descendantFocusability = ViewGroup.FOCUS_BEFORE_DESCENDANTS
 
         userEntity = intent.getParcelableExtra(EXTRA_USER)!!
 
@@ -129,7 +135,8 @@ class DetailUserActivity : AppCompatActivity(), View.OnClickListener {
                 setStatusFavorite(statusFavorite)
             }
             R.id.btn_settings -> {
-                val moveToSettingIntent = Intent(this@DetailUserActivity, SettingsActivity::class.java)
+                val moveToSettingIntent =
+                    Intent(this@DetailUserActivity, SettingsActivity::class.java)
                 startActivity(moveToSettingIntent)
             }
         }

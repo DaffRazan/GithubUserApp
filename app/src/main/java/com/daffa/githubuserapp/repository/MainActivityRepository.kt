@@ -2,7 +2,6 @@ package com.daffa.githubuserapp.repository
 
 import android.app.Application
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import com.daffa.githubuserapp.retrofitapi.RetrofitApi
 import com.daffa.githubuserapp.retrofitapi.model.User
@@ -28,7 +27,7 @@ class MainActivityRepository(val application: Application) {
                 response: Response<UserSearchModel>
             ) {
                 listUser.value = response.body()?.items
-                Log.d("result", listUser.toString())
+                Log.d("response", listUser.toString())
                 progressBar.value = false
             }
 

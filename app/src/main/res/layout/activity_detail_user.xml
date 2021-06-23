@@ -1,41 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/coordinator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".view.DetailUserActivity">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/AppBackgroundColor">
 
             <TextView
                 android:id="@+id/detail_title"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:focusable="true"
                 android:fontFamily="@font/poppins_black"
                 android:paddingHorizontal="10dp"
-                android:text="@string/detailTitle"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_settings"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/detailTitle" />
 
             <ProgressBar
                 android:id="@+id/progress_bar_detail"
                 style="?android:attr/progressBarStyle"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
                 android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@id/view_pager"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -43,13 +50,12 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/btn_settings"
-                android:layout_width="38dp"
+                android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="32dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="32dp"
                 android:src="@drawable/ic_baseline_settings_24"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/detail_title"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -58,12 +64,12 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="105dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="106dp"
-                android:src="@drawable/user_not_found"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/detail_title"
+                tools:src="@drawable/user_not_found" />
 
             <TextView
                 android:id="@+id/tv_name_received"
@@ -72,7 +78,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
-                android:text="@string/tv_name_received"
+                tools:text="@string/tv_name_received"
                 android:textColor="@color/nameUser"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@+id/img_avatar_received" />
@@ -115,7 +121,7 @@
                 android:layout_marginEnd="12dp"
                 android:fontFamily="@font/poppins_regular"
                 android:gravity="center"
-                android:text="@string/tv_follower_received"
+                tools:text="@string/tv_follower_received"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toStartOf="@id/tv_following_received"
@@ -131,7 +137,7 @@
                 android:layout_marginEnd="24dp"
                 android:fontFamily="@font/poppins_regular"
                 android:gravity="center"
-                android:text="@string/tv_following_received"
+                tools:text="@string/tv_following_received"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -150,23 +156,25 @@
 
             <TextView
                 android:id="@+id/tv_company_received"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="@string/tv_company_received"
                 android:textColor="@color/textColor"
-                android:textSize="16sp"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/circleImageView"
-                app:layout_constraintTop_toBottomOf="@+id/tv_following_received" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_following_received"
+                tools:text="@string/tv_company_received" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/circleImageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="120dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="18dp"
                 android:src="@drawable/ic_location"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
@@ -174,39 +182,44 @@
 
             <TextView
                 android:id="@+id/tv_location_received"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="@string/tv_location_received"
                 android:textColor="@color/textColor"
-                android:textSize="16sp"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/circleImageView2"
-                app:layout_constraintTop_toBottomOf="@+id/tv_company_received" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_company_received"
+                tools:text="@string/tv_location_received" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/circleImageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="120dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="20dp"
                 android:src="@drawable/ic_repo"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/circleImageView2" />
 
             <TextView
                 android:id="@+id/tv_repository_received"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="@string/tv_repository_received"
                 android:textColor="@color/textColor"
-                android:textSize="16sp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/tabs"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/circleImageView3"
-                app:layout_constraintTop_toBottomOf="@+id/tv_location_received" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_location_received"
+                tools:text="@string/tv_repository_received" />
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"
@@ -223,13 +236,15 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/view_pager"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tabs" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_favorite"
@@ -241,9 +256,9 @@
         android:backgroundTint="@color/white"
         android:contentDescription="@string/fb_favorite"
         android:elevation="2dp"
-        app:srcCompat="@drawable/ic_unfill_favorite"
         app:borderWidth="0dp"
-        app:fabSize="normal" />
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_unfill_favorite" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
