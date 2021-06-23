@@ -2,6 +2,7 @@ package com.daffa.consumerapp.view
 
 import android.os.Bundle
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
@@ -37,6 +38,10 @@ class DetailUserActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Scroll to very top
+        binding.nestedScroll.isFocusableInTouchMode = true
+        binding.nestedScroll.descendantFocusability = ViewGroup.FOCUS_BEFORE_DESCENDANTS
 
         userEntity = intent.getParcelableExtra<UserEntity>(EXTRA_USER)!!
 

@@ -4,7 +4,8 @@ import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 
 object Client {
-    private const val TOKEN = "token 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"
+    //REPLACE WITH YOUR OWN GITHUB PERSONAL ACCESS TOKEN
+    private const val TOKEN = "token yourtoken"
 
     val okHttpClient = OkHttpClient.Builder().apply {
         addInterceptor(

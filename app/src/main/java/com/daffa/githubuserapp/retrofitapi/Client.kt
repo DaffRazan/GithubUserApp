@@ -4,7 +4,7 @@ import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 
 object Client {
-    private const val TOKEN = "token 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"
+    private const val TOKEN = "token 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"
 
     val okHttpClient = OkHttpClient.Builder().apply {
         addInterceptor(
