@@ -2,6 +2,8 @@ GithubUserApp is a mobile-app that enable us to easily find github user by searc
 
 GithubUserApp is a project that needs to be completed in Android Fundamental Course on Dicoding. **Please do not plagiarize my project for Dicoding Submission purpose.** 
 
+ ⚠️ **USE YOUR OWN TOKEN** ⚠️
+
 The features of the app are:
 
 1. Retrofit (Type-safe REST client for Android)
